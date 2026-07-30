@@ -130,7 +130,7 @@ The following items should be installed in your system:
 
 1. Inside IntelliJ IDEA:
 
-    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
+    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
     - CSS files are generated from the Maven build. You can build them on the command line `./mvnw generate-resources` or right-click on the `spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
 
@@ -139,6 +139,17 @@ The following items should be installed in your system:
 1. Navigate to the Petclinic
 
     Visit [http://localhost:8080](http://localhost:8080) in your browser.
+
+## Local development
+
+To build and run the application locally:
+
+```bash
+./mvnw clean package
+./mvnw spring-boot:run
+```
+
+The application will be available at <http://localhost:8080/>.
 
 ## Looking for something in particular?
 
