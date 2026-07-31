@@ -45,6 +45,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  * @author Michael Isvy
  * @author Wick Dynex
  */
+/**
+ * Handles all HTTP requests related to pet owners in the PetClinic application.
+ * Provides endpoints for creating, searching (by last name with pagination),
+ * updating, and displaying owner information, delegating persistence to
+ * {@link OwnerRepository}.
+ */
 @Controller
 class OwnerController {
 
