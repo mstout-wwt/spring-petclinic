@@ -10,6 +10,15 @@ See the presentation here:
 > **Note:** These slides refer to a legacy, pre–Spring Boot version of Petclinic and may not reflect the current Spring Boot–based implementation.  
 > For up-to-date information, please refer to this repository and its documentation.
 
+## Documentation
+
+In-depth technical documentation for this project is maintained in the [`docs/`](docs/) directory:
+
+| Document | Description |
+|---|---|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Component overview, controllers, repository layer, caching strategy, i18n, database profiles, Actuator, and Kubernetes |
+| [docs/WORKFLOWS.md](docs/WORKFLOWS.md) | End-to-end sequence diagrams for application startup, owner search, adding pets, booking visits, vet list caching, error handling, locale switching, and CI pipeline |
+| [docs/DATA_MODEL.md](docs/DATA_MODEL.md) | Entity-relationship diagram, table descriptions, JPA class hierarchy, fetch strategies, and schema SQL file locations |
 
 ## Run Petclinic locally
 
@@ -130,7 +139,7 @@ The following items should be installed in your system:
 
 1. Inside IntelliJ IDEA:
 
-    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
+    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
     - CSS files are generated from the Maven build. You can build them on the command line `./mvnw generate-resources` or right-click on the `spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
 
